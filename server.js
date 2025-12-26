@@ -9,7 +9,7 @@ console.log(">>> server.js loaded");
 dotenv.config();
 
 const app = express();
-app.use(cors({ origin: "http://localhost:5173" })); // FE Vite
+app.use(cors({ origin: "elysian.goldeneden.io.vn" })); // FE Vite
 app.use(express.json({ limit: "1mb" }));
 
 app.get("/", (req, res) => {
